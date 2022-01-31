@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
-/* 
+#navbar{
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 2rem;
+}
+#navbar-header{
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(72, 0, 124);
+    padding: 2rem; 
+    margin-bottom: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#todo-input{
+    width: 40%;
+}
 
-*/
+#empty-list{
+    color: gray;
+}
+
+.card{
+    margin: 0 auto;
+    float: none;
+    width: 60%;
+}
