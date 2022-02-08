@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 //Import service
-import { getTodos } from "../../service/todo.js";
+import { getTodos, updateTodos } from "../../service/todo.js";
 
 //Import components
 import NavBar from "./NavBar.jsx";
@@ -33,27 +33,6 @@ const Home = () => {
 			});
 	}, []);
 
-	useEffect(() => {
-		fetch(
-			"https://assets.breatheco.de/apis/fake/todos/user/mireiagonzalez",
-			{
-				method: "PUT",
-				body: JSON.stringify(todosList),
-				headers: {
-					"Content-Type": "application/json",
-				},
-			}
-		)
-			.then((res) => {
-				return res.json();
-			})
-			.then((data) => {
-				console.log(data);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	}, [todosList]);
 
 	console.log({ newTodo });
 	console.log({ todosList });
