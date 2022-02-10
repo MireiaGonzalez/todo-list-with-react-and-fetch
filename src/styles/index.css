@@ -18,9 +18,24 @@
 #empty-list{
     color: gray;
 }
+#trash-icon{
+    width: 1rem;
+    height: 1rem;
+}
 
 .card{
     margin: 0 auto;
     float: none;
     width: 60%;
 }
+.btn-success{
+    border-radius: 30%;
+    width: 2rem;
+    height: 2rem;
+}
+.btn-danger{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
