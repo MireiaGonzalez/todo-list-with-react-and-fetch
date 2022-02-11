@@ -1,4 +1,4 @@
-export const getTodos = () => {
+export const getTodos = async () => {
 	return fetch(
 		"https://assets.breatheco.de/apis/fake/todos/user/mireiagonzalez",
 		{ method: "GET" }
